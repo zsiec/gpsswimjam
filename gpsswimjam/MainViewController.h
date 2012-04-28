@@ -7,7 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    NSArray *swimList;
+    
+    NSFetchedResultsController *fetchedResultsController;
+    NSManagedObjectContext  *managedObjectContext;
+    NSEntityDescription *entityDesc;
+
+    Swim *nextSwim;
+    
+    IBOutlet UITableView *tableView;
+}
+
+
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
+
+@property (nonatomic, retain, readonly) NSFetchedResultsController *fetchedResultsController;
+
+-(void)fetch;
 
 @end

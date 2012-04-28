@@ -9,12 +9,13 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+@synthesize managedObjectContext;
 
 @synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self setMenuBarColor];
     return YES;
 }
 							
@@ -43,6 +44,44 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)setMenuBarColor
+{
+    UIColor *navBarTintColor = [UIColor colorWithRed:(0/255.00)
+                                               green:(22/255.00)
+                                                blue:(140   /255.00)
+                                               alpha:1];
+    [[UINavigationBar appearance] setTintColor:navBarTintColor];
+}
+
+
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+    if (persistentStoreCoordinator == nil) {
+        NSURL *storeUrl = [NSURL fileURLWithPath:self.persistentStorePath];
+        persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[NSManagedObjectModel mergedModelFromBundles:nil]];
+        NSError *error = nil;
+        NSPersistentStore *persistentStore = [persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error];
+        NSAssert3(persistentStore != nil, @"Unhandled error adding persistent store in %s at line %d: %@", __FUNCTION__, __LINE__, [error localizedDescription]);
+    }
+    return persistentStoreCoordinator;
+}
+
+- (NSManagedObjectContext *)managedObjectContext {
+    if (managedObjectContext == nil) {
+        managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [managedObjectContext setPersistentStoreCoordinator:self.persistentStoreCoordinator];
+    }
+    return managedObjectContext;
+}
+
+- (NSString *)persistentStorePath {
+    if (persistentStorePath == nil) {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths lastObject];
+        persistentStorePath = [documentsDirectory stringByAppendingPathComponent:@"Swim.sqlite"];
+    }
+    return persistentStorePath;
 }
 
 @end

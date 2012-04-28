@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B14FD5B154C653500DDD792 /* Swim.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B14FD59154C653500DDD792 /* Swim.xcdatamodeld */; };
+		0B14FD5E154C65B000DDD792 /* Swim.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B14FD5D154C65B000DDD792 /* Swim.m */; };
+		0B14FD61154C65EE00DDD792 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B14FD60154C65EE00DDD792 /* CoreData.framework */; };
+		0B14FD63154C84D500DDD792 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B14FD62154C84D500DDD792 /* CoreLocation.framework */; };
+		0B14FD65154C864300DDD792 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B14FD64154C864300DDD792 /* MBProgressHUD.m */; };
+		0B14FD69154C8F8800DDD792 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B14FD68154C8F8800DDD792 /* SummaryViewController.m */; };
+		0B2BF7F1154C51BE00427EA3 /* SwimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2BF7F0154C51BE00427EA3 /* SwimViewController.m */; };
+		0B2BF7F4154C597600427EA3 /* darkNoise.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2BF7F3154C597600427EA3 /* darkNoise.png */; };
+		0B2BF7F9154C59A100427EA3 /* button_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2BF7F5154C59A100427EA3 /* button_red.png */; };
+		0B2BF7FA154C59A100427EA3 /* button_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2BF7F6154C59A100427EA3 /* button_red@2x.png */; };
+		0B2BF7FB154C59A100427EA3 /* button_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2BF7F7154C59A100427EA3 /* button_white.png */; };
+		0B2BF7FC154C59A100427EA3 /* button_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2BF7F8154C59A100427EA3 /* button_white@2x.png */; };
+		0B2BF801154C5B5000427EA3 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2BF800154C5B5000427EA3 /* GradientButton.m */; };
 		0BF4E91B154C10E300D20DE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF4E91A154C10E300D20DE4 /* UIKit.framework */; };
 		0BF4E91D154C10E300D20DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF4E91C154C10E300D20DE4 /* Foundation.framework */; };
 		0BF4E91F154C10E300D20DE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF4E91E154C10E300D20DE4 /* CoreGraphics.framework */; };
@@ -18,6 +31,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B14FD5A154C653500DDD792 /* Swim.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swim.xcdatamodel; sourceTree = "<group>"; };
+		0B14FD5C154C65B000DDD792 /* Swim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swim.h; sourceTree = "<group>"; };
+		0B14FD5D154C65B000DDD792 /* Swim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swim.m; sourceTree = "<group>"; };
+		0B14FD60154C65EE00DDD792 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0B14FD62154C84D500DDD792 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0B14FD64154C864300DDD792 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		0B14FD66154C864C00DDD792 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0B14FD67154C8F8800DDD792 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
+		0B14FD68154C8F8800DDD792 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
+		0B2BF7EF154C51BE00427EA3 /* SwimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwimViewController.h; sourceTree = "<group>"; };
+		0B2BF7F0154C51BE00427EA3 /* SwimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwimViewController.m; sourceTree = "<group>"; };
+		0B2BF7F3154C597600427EA3 /* darkNoise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkNoise.png; sourceTree = "<group>"; };
+		0B2BF7F5154C59A100427EA3 /* button_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_red.png; sourceTree = "<group>"; };
+		0B2BF7F6154C59A100427EA3 /* button_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_red@2x.png"; sourceTree = "<group>"; };
+		0B2BF7F7154C59A100427EA3 /* button_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_white.png; sourceTree = "<group>"; };
+		0B2BF7F8154C59A100427EA3 /* button_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_white@2x.png"; sourceTree = "<group>"; };
+		0B2BF800154C5B5000427EA3 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
+		0B2BF802154C5B5900427EA3 /* GradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
 		0BF4E916154C10E300D20DE4 /* gpsswimjam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gpsswimjam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF4E91A154C10E300D20DE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0BF4E91C154C10E300D20DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B14FD63154C84D500DDD792 /* CoreLocation.framework in Frameworks */,
+				0B14FD61154C65EE00DDD792 /* CoreData.framework in Frameworks */,
 				0BF4E91B154C10E300D20DE4 /* UIKit.framework in Frameworks */,
 				0BF4E91D154C10E300D20DE4 /* Foundation.framework in Frameworks */,
 				0BF4E91F154C10E300D20DE4 /* CoreGraphics.framework in Frameworks */,
@@ -47,9 +80,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B14FD57154C651500DDD792 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				0B14FD5F154C65BC00DDD792 /* headers */,
+				0B14FD5D154C65B000DDD792 /* Swim.m */,
+				0B14FD59154C653500DDD792 /* Swim.xcdatamodeld */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		0B14FD5F154C65BC00DDD792 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				0B14FD5C154C65B000DDD792 /* Swim.h */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
+		0B2BF7FD154C5B3A00427EA3 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				0B2BF802154C5B5900427EA3 /* GradientButton.h */,
+				0B14FD64154C864300DDD792 /* MBProgressHUD.m */,
+				0B14FD66154C864C00DDD792 /* MBProgressHUD.h */,
+				0B2BF800154C5B5000427EA3 /* GradientButton.m */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
 		0BF4E90B154C10E300D20DE4 = {
 			isa = PBXGroup;
 			children = (
+				0B14FD62154C84D500DDD792 /* CoreLocation.framework */,
 				0BF4E920154C10E300D20DE4 /* gpsswimjam */,
 				0BF4E919154C10E300D20DE4 /* Frameworks */,
 				0BF4E917154C10E300D20DE4 /* Products */,
@@ -67,6 +130,7 @@
 		0BF4E919154C10E300D20DE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B14FD60154C65EE00DDD792 /* CoreData.framework */,
 				0BF4E91A154C10E300D20DE4 /* UIKit.framework */,
 				0BF4E91C154C10E300D20DE4 /* Foundation.framework */,
 				0BF4E91E154C10E300D20DE4 /* CoreGraphics.framework */,
@@ -77,11 +141,12 @@
 		0BF4E920154C10E300D20DE4 /* gpsswimjam */ = {
 			isa = PBXGroup;
 			children = (
+				0B14FD57154C651500DDD792 /* data */,
+				0B2BF7FD154C5B3A00427EA3 /* libs */,
+				0BF4E93B154C22D200D20DE4 /* view controllers */,
+				0BF4E92C154C10E300D20DE4 /* MainStoryboard.storyboard */,
 				0BF4E929154C10E300D20DE4 /* AppDelegate.h */,
 				0BF4E92A154C10E300D20DE4 /* AppDelegate.m */,
-				0BF4E92C154C10E300D20DE4 /* MainStoryboard.storyboard */,
-				0BF4E92F154C10E300D20DE4 /* MainViewController.h */,
-				0BF4E930154C10E300D20DE4 /* MainViewController.m */,
 				0BF4E921154C10E300D20DE4 /* Supporting Files */,
 			);
 			path = gpsswimjam;
@@ -90,12 +155,38 @@
 		0BF4E921154C10E300D20DE4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0B2BF7F5154C59A100427EA3 /* button_red.png */,
+				0B2BF7F6154C59A100427EA3 /* button_red@2x.png */,
+				0B2BF7F7154C59A100427EA3 /* button_white.png */,
+				0B2BF7F8154C59A100427EA3 /* button_white@2x.png */,
+				0B2BF7F3154C597600427EA3 /* darkNoise.png */,
 				0BF4E922154C10E300D20DE4 /* gpsswimjam-Info.plist */,
 				0BF4E923154C10E300D20DE4 /* InfoPlist.strings */,
 				0BF4E926154C10E300D20DE4 /* main.m */,
 				0BF4E928154C10E300D20DE4 /* gpsswimjam-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BF4E93B154C22D200D20DE4 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0BF4E93D154C22DE00D20DE4 /* headers */,
+				0BF4E930154C10E300D20DE4 /* MainViewController.m */,
+				0B2BF7F0154C51BE00427EA3 /* SwimViewController.m */,
+				0B14FD68154C8F8800DDD792 /* SummaryViewController.m */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		0BF4E93D154C22DE00D20DE4 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				0BF4E92F154C10E300D20DE4 /* MainViewController.h */,
+				0B14FD67154C8F8800DDD792 /* SummaryViewController.h */,
+				0B2BF7EF154C51BE00427EA3 /* SwimViewController.h */,
+			);
+			name = headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +241,11 @@
 			files = (
 				0BF4E925154C10E300D20DE4 /* InfoPlist.strings in Resources */,
 				0BF4E92E154C10E300D20DE4 /* MainStoryboard.storyboard in Resources */,
+				0B2BF7F4154C597600427EA3 /* darkNoise.png in Resources */,
+				0B2BF7F9154C59A100427EA3 /* button_red.png in Resources */,
+				0B2BF7FA154C59A100427EA3 /* button_red@2x.png in Resources */,
+				0B2BF7FB154C59A100427EA3 /* button_white.png in Resources */,
+				0B2BF7FC154C59A100427EA3 /* button_white@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +259,12 @@
 				0BF4E927154C10E300D20DE4 /* main.m in Sources */,
 				0BF4E92B154C10E300D20DE4 /* AppDelegate.m in Sources */,
 				0BF4E931154C10E300D20DE4 /* MainViewController.m in Sources */,
+				0B2BF7F1154C51BE00427EA3 /* SwimViewController.m in Sources */,
+				0B2BF801154C5B5000427EA3 /* GradientButton.m in Sources */,
+				0B14FD5B154C653500DDD792 /* Swim.xcdatamodeld in Sources */,
+				0B14FD5E154C65B000DDD792 /* Swim.m in Sources */,
+				0B14FD65154C864300DDD792 /* MBProgressHUD.m in Sources */,
+				0B14FD69154C8F8800DDD792 /* SummaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +376,22 @@
 				0BF4E936154C10E300D20DE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0B14FD59154C653500DDD792 /* Swim.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0B14FD5A154C653500DDD792 /* Swim.xcdatamodel */,
+			);
+			currentVersion = 0B14FD5A154C653500DDD792 /* Swim.xcdatamodel */;
+			path = Swim.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0BF4E90D154C10E300D20DE4 /* Project object */;
 }

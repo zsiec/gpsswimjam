@@ -7,9 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "GradientButton.h"
+#import "MBProgressHUD.h"
+#import "Swim.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    NSUserDefaults *defaults;
+    
+    NSManagedObjectContext *managedObjectContext;
+    NSPersistentStoreCoordinator *persistentStoreCoordinator;
+    NSString *persistentStorePath;
+}
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) UIWindow *window;
 
 @end
